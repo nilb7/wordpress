@@ -8,7 +8,7 @@ function load_scripts(){
         filemtime(get_template_directory().'/style.css'),'all'
     );
 
-    wp_enqueue_script('dropdown',get_template_directory().'/js/dropdown.js',array(),'1.0',false)
+    wp_enqueue_script('dropdown',get_template_directory().'/js/dropdown.js',array(),'1.0',false);
 }
 
 add_action('wp_enqueue_scripts','load_scripts');
@@ -26,7 +26,7 @@ function config() {
             'width'=>1920
         );
 
-        add_theme_suppoert('custom-header',$args);
+        add_theme_support('custom-header',$args);
         add_theme_support('post_thumbnails');
         add_theme_support('custom-logo',array(
             'width'=>200,
